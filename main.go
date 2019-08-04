@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/Simple-Bday-App/helper"
-	"github.com/Simple-Bday-App/models"
+	"github.com/mohan08p/Simple-Bday-App/helper"
+	"github.com/mohan08p/Simple-Bday-App/models"
 	"database/sql"
 	"encoding/json"
 	"fmt"
