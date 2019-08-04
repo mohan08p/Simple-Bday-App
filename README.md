@@ -26,6 +26,8 @@ And, for running go lang application I have use multi-stage docker image where w
 
     $ docker container run -t simplebdayapp -p 8080:8080 SimpleBdayApp
 
+![Result of the App ](images/Output.JPG)
+
 Once docker images are ready we can push a docker image into [Docker Hub](https://hub.docker.com/) centralized repository for future reference and using this docker image.
 
 Then simply running these docker containers into Kubernetes cluster using deployment and replica-sets. Once pods are running into K8s clsuter then create a service construct to access the applications running inside pod. The scaling of application will be based on resource utilization, CPU, memory of containers inside pod and once it reach 80%, it we'll do horizontal pod autoscaling and our application will scale-up and vice-versa for scale-down the desired set of replicas running inside cluster.
