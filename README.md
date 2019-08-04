@@ -6,7 +6,7 @@
 
 In this project I am trying to setup Jenkins pipeline for web application on top of Kubernetes cluster.
 
-![Architecture diagram](images/architecture.png)
+![Architecture diagram](images/architecture.jpg)
 
 This is a simple 2-tier application where web application is running using Go and users are stored in backend database MySQL, respectively.
 
