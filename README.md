@@ -18,11 +18,11 @@ where, -v /opt/datadir:/var/lib/mysql telling that /opt/datadir which is on my h
 
 Grab the mysql IP and and use it in your go mysql driver while connecting to this database.
 
-    $ docker container inspect mysql | grep IPAddr
+    $ docker container inspect mysqldb | grep IPAddr
 
 And, for running go lang application I have use multi-stage docker image where we'll build go binary and copy it into tiny alpine docker image to run an application. 
 
-    $ docker build -t SimpleBdayApp -f Dockerfile .
+    $ docker build -t simplebdayapp -f Dockerfile .
 
     $ docker container run -t simplebdayapp -p 8080:8080 SimpleBdayApp
 

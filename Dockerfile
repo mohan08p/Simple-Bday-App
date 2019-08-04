@@ -1,7 +1,7 @@
 FROM golang:alpine AS builder
 
 WORKDIR /go/src/app
-COPY /src/Simple-Bday-App/ .
+COPY . .
 
 RUN go build -o simple-bday-app .
 

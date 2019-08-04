@@ -1,8 +1,8 @@
 package main
 
 import (
-	"Pluralsight/Simple-Bday-App/helper"
-	"Pluralsight/Simple-Bday-App/models"
+	"github.com/Simple-Bday-App/helper"
+	"github.com/Simple-Bday-App/models"
 	"database/sql"
 	"encoding/json"
 	"fmt"
@@ -22,7 +22,7 @@ var db *sql.DB
 const (
 	dbName = "person"
 	dbPass = "password"
-	dbHost = "localhost"
+	dbHost = "mysqldb"
 	dbPort = "3306"
 )
 
